@@ -1,0 +1,262 @@
+/*
+Theme Name: Gold Gate
+Author: Trace McGraw
+Version: 1.0
+*/
+
+body{
+    font-family: 'Roboto';
+}
+/* navbar */
+#nav{
+    margin: 0;
+    background-color: white;
+    height: 50px;
+}
+#logo{
+    position: relative;
+    left: 25%;
+    margin: 0;
+    
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#nav li {
+    float: left;
+    left: 50%;
+}
+
+#nav li a {
+    display: block;
+    font-size: 1.2em;
+    color: rgba(90, 90, 90, 0.76);
+    text-align: center;
+    padding: 13px 12px;
+    text-decoration: none;
+    transition: .88s;
+    height: 50px;
+}
+
+#nav li a:hover {
+    background-color: rgb(71, 69, 69);
+    color: white;
+    transform: scale(.8);
+    height: 50px;
+}
+/* slider */
+.overlay{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    pointer-events: none;
+    color: white;
+    font-size: 10px;
+  }
+
+@media (min-width: 768px) and (max-width: 979px) {
+    #nav li a{
+        text-align: center
+    }
+    .overlay{
+
+        width:100%;
+        height:100%; 
+    }  
+ 
+    .overlay h1{
+        font-size: 12px;
+    } 
+    
+ }
+
+@media (max-width: 767px) {
+    .overlay{
+
+    width:100%;
+    height:100%;
+  }
+  .overlay h1{
+    font-size: 12px;
+}
+  .overlay img{
+      width: 10%;
+      height: auto;
+  }
+
+  }
+@media (max-width: 415px) {
+    #nav li a{
+        text-align: center
+    }
+    .whatwedo h2{
+        font-size: 1.2em;
+    }
+   .overlay{
+  width:100%;
+  font-size: .15em;
+  text-align: center;
+  }
+  #gglogo{
+      width: 50%;
+      height: auto;
+  }
+  #slider-text h1{
+    position: relative;
+    bottom: 20%;
+  }
+  
+}
+#slider-text{
+    text-align: center;
+    padding-top: 15%;
+}
+#slider-text h1{
+    font-size: 5.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.home-services{
+    text-align: center;
+    margin: 80px;
+}
+.centered{
+    text-align: center;
+}
+.whatwedo{
+    font-family: 'Roboto', sans-serif;
+}
+
+.about{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('denver2.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+   
+}
+#about{
+    width: 100%;
+    right:0;
+    left: 0;
+    padding: 100px 60px 0 60px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    
+}
+.about h1{
+    font-size: 40px;
+}
+#about h1 h4{ 
+    font-family: 'Roboto', sans-serif;  
+    display: block;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+@media only screen and (max-width: 600px) {
+    .about{
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('denver2.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 600px;
+        position: relative;
+        text-align: center;
+        color: white;
+        overflow: hidden;
+    }
+    #about h1{
+        font-size: 1em;
+    }
+
+    #about h3{ 
+       font-size:  1.0em;
+       
+    }
+ 
+ }
+
+
+/* footer */
+
+#menu-footer-menu li{
+    display: inline;
+    position: relative;
+    bottom: -5px;
+}
+#menu-footer-menu li a{
+    color: rgb(46, 44, 44);
+    text-decoration: none;
+    font-size: 1.4em;
+    padding: 10px;
+}
+#copyright{
+    color: grey;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+#contact-footer{
+    color: grey;
+}
+#contact-footer a{
+    text-decoration: none;
+    color: grey;
+}
+/* People */
+#people-title h2{
+    color: white;
+    text-align: left;
+    position: relative;
+    top: 30px;
+    font-size: 40px;
+}
+.notopmargin{
+    margin-top: 0 !important;
+}
+
+/* Services */
+#nav-services{
+    margin: 0px;
+    background-color: lightgray;
+}
+#nav-services ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+#nav-services li {
+    float: left;
+    
+}
+
+#nav-services li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 13px 12px;
+    text-decoration: none;
+}
+
+#nav-services li a:hover {
+    background-color: rgb(71, 69, 69);
+    color: white;
+    transition: .55s;
+}
+
