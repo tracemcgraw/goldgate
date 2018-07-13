@@ -170,6 +170,7 @@ ul {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
+.carousel-indicators li { visibility: hidden; }
 .home-services{
     text-align: center;
     margin: 80px;
