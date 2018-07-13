@@ -6,10 +6,19 @@ Version: 1.0
 .serviceBox:hover {
     transform: scale(1.05, 1.05);
 }
+.service-icon:hover img{
+    transform: rotate(360deg);
+    color: #a88500;
+}
+.service-icon img {
+    transform: rotate(0);
+    transition: all 0.2s ease-out 0s;
+}
 .serviceBox{
     margin-top: 25px;
     border: 1px solid grey;
     padding: 25px;
+    position: relative;
     text-align: center;
     border-radius: 15px;
     transition: all 0.4s ease-in-out 0s;
@@ -18,6 +27,27 @@ Version: 1.0
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
 }
+.read-more {
+    display: inline-block;
+    padding: 5px 22px;
+    background-color: #d3ae36;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 40px;
+    position: relative;
+    transition: all 0.4s ease-in-out 0s !important;
+    text-decoration: none;
+
+}
+.read-more:hover {
+    transform: scale(1.1, 1.1);
+    text-decoration: none;
+    color: white;
+    background-color: #ac9033;
+}
+
 body{
     font-family: 'Roboto';
 }
